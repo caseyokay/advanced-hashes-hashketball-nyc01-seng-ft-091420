@@ -141,10 +141,10 @@ def big_shoe_rebounds
       if attribute == :players
         data.each do |player|
           #this gives me the player hashes
-          binding.pry 
-          player.max_by{|k| k[:shoe] }
-          
-          player.max_by{|k| k[:shoe] }[:rebounds]
+          player.max_by{|player| player[:shoe] }
+                    binding.pry 
+
+          player.max_by{|player| player[:shoe] }[:rebounds]
         end
       end
     end
