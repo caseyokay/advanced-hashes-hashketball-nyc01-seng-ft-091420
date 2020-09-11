@@ -138,8 +138,9 @@ end
 def big_shoe_rebounds
   game_hash.each do |place, team|
     team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
+      team[:players].each do player|
+      # if attribute == :players
+      #   data.each do |player|
           #this gives me the player hashes
           # data.max_by{|player| player[:shoe] }
           # data.max_by{|player| player[:shoe] }[:rebounds]
