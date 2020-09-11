@@ -138,7 +138,7 @@ end
 def big_shoe_rebounds
   game_hash.each do |place, team|
     team.each do |attribute, data|
-      team[:players].each do player|
+      team[:players].each do |player|
       # if attribute == :players
       #   data.each do |player|
           #this gives me the player hashes
