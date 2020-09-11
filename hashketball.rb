@@ -249,13 +249,15 @@ end
 # def player_numbers
 # #returns the player jersey numbers 
 def player_numbers(team_name)
-  game_hash.map do |place, team|
+  player_number = []
+  game_hash.each do |place, team|
     if team[:team_name] == team_name 
       team[:players].each do |player|
-            player[:number]
+            player_number<< player[:number]
           end
         end
       end
+      player_number
     end
 
 
