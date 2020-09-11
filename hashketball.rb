@@ -136,9 +136,14 @@ end
 #Remember to think about return values here.
 
 def big_shoe_rebounds
+  max_shoe = 0 
+  max_rebounds = 0 
   game_hash.each do |place, team|
-    team.each do |attribute, data|
+    # team.each do |attribute, data|
       team[:players].each do |player|
+        if player[:shoe] > max_shoe
+          max_shoe = player[:shoe]
+          max_rebounds = player[:rebounds]
       # if attribute == :players
       #   data.each do |player|
           #this gives me the player hashes
