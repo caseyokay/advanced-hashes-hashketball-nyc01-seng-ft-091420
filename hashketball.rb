@@ -142,9 +142,9 @@ def big_shoe_rebounds
         # data.each do |player|
           #this gives me the player hashes
           data.max_by{|player| player[:shoe] }
-          player.max_by{|player| player[:shoe] }
-                    # binding.pry 
+          data.max_by{|player| player[:shoe] }[:rebounds]
 
+          player.max_by{|player| player[:shoe] 
           player.max_by{|player| player[:shoe] }[:rebounds]
         end
       end
