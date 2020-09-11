@@ -242,6 +242,8 @@ end
 
 # def player_stats
 # #returns all stats for a given player 
+#takes in an argument of a player's name and returns a hash of that player's stats.
+
 def player_stats(player_name)
   new_hash = {}
 
