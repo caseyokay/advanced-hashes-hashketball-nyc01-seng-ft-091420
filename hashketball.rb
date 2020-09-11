@@ -127,6 +127,27 @@ def game_hash
   }
 end
 
+# def big_shoe_rebounds
+# #returns the number of rebounds of the player with the biggest shoe size 
+#Build a method, big_shoe_rebounds, that will return the number of rebounds associated with the player that has the largest shoe size. Break this one down into steps:
+
+#First, find the player with the largest shoe size
+#Then, return that player's number of rebounds
+#Remember to think about return values here.
+
+def big_shoe_rebounds
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          player.max_by{|k| k[:shoe] }
+          player.max_by{|k| k[:shoe] }[:rebounds]
+          binding.pry 
+        end
+      end
+    end
+  end
+end
 
 # def player_helper
 #   game_hash[:home][:players].merge(game_hash[:away][:players])
@@ -250,26 +271,6 @@ def player_stats(player_name)
   end
 end
 
-# def big_shoe_rebounds
-# #returns the number of rebounds of the player with the biggest shoe size 
-#Build a method, big_shoe_rebounds, that will return the number of rebounds associated with the player that has the largest shoe size. Break this one down into steps:
 
-#First, find the player with the largest shoe size
-#Then, return that player's number of rebounds
-#Remember to think about return values here.
-
-def big_shoe_rebounds
-  game_hash.each do |place, team|
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-          player.max_by{|k| k[:shoe] }
-          player.max_by{|k| k[:shoe] }[:rebounds]
-          binding.pry 
-        end
-      end
-    end
-  end
-end
 
           
