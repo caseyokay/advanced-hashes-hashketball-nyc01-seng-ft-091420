@@ -150,8 +150,8 @@ def big_shoe_rebounds
           # data.max_by{|player| player[:shoe] }
           # data.max_by{|player| player[:shoe] }[:rebounds]
 
-          player.max_by{|player| player[:shoe] 
-          player.max_by{|player| player[:shoe] }[:rebounds]
+          # player.max_by{|player| player[:shoe] 
+          # player.max_by{|player| player[:shoe] }[:rebounds]
         end
       end
     end
