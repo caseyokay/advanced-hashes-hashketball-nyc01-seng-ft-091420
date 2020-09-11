@@ -150,20 +150,7 @@ def big_shoe_rebounds
   end
 end
 
-# def player_helper
-#   game_hash[:home][:players].merge(game_hash[:away][:players])
-# end
 
-# def home_team_players
-#   game_hash[:home][:players]
-# end
- 
-# puts home_team_players
-
-# Write code here
-#knows the number of points scored by each player 
-#Think about how you will find the shoe size of the correct player. How can you check and see if a player's name matches the name that has been passed into the method as an argument?
-# binding.pry 
 
 def num_points_scored(player_name)
   game_hash.each do |place, team|
