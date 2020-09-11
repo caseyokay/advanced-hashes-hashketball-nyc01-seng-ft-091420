@@ -258,3 +258,11 @@ end
 #Then, return that player's number of rebounds
 #Remember to think about return values here.
 
+def big_shoe_rebounds
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          
+          
+          
