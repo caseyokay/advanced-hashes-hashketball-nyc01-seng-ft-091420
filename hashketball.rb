@@ -151,6 +151,26 @@ def big_shoe_rebounds
   end
 end
 
+# def player_stats
+# #returns all stats for a given player 
+#takes in an argument of a player's name and returns a hash of that player's stats.
+
+def player_stats(player_name)
+  new_hash = {}
+
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players 
+        data.each do |player|
+          if player[:player_name] == player_name
+            new_hash = player
+          end
+        end
+      end
+    end
+  end
+end
+
 
 def num_points_scored(player_name)
   game_hash.each do |place, team|
@@ -241,25 +261,25 @@ def player_numbers(team_name)
 end
 
 
-# def player_stats
-# #returns all stats for a given player 
-#takes in an argument of a player's name and returns a hash of that player's stats.
+# # def player_stats
+# # #returns all stats for a given player 
+# #takes in an argument of a player's name and returns a hash of that player's stats.
 
-def player_stats(player_name)
-  new_hash = {}
+# def player_stats(player_name)
+#   new_hash = {}
 
-  game_hash.each do |place, team|
-    team.each do |attribute, data|
-      if attribute == :players 
-        data.each do |player|
-          if player[:player_name] == player_name
-            new_hash = player
-          end
-        end
-      end
-    end
-  end
-end
+#   game_hash.each do |place, team|
+#     team.each do |attribute, data|
+#       if attribute == :players 
+#         data.each do |player|
+#           if player[:player_name] == player_name
+#             new_hash = player
+#           end
+#         end
+#       end
+#     end
+#   end
+# end
 
 
 
