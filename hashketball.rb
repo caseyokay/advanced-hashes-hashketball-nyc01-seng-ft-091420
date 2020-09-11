@@ -263,6 +263,6 @@ def big_shoe_rebounds
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          player.max_by{|k| k[:test_score] }
-player.max_by{|k| k[:test_score] }[:name]
+          player.max_by{|k| k[:shoe:] }
+          player.max_by{|k| k[:shoe:] }[:name]
           
