@@ -265,6 +265,7 @@ def big_shoe_rebounds
         data.each do |player|
           player.max_by{|k| k[:shoe] }
           player.max_by{|k| k[:shoe] }[:rebounds]
+          binding.pry 
         end
       end
     end
