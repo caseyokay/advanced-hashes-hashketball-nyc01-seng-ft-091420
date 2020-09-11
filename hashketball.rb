@@ -264,5 +264,11 @@ def big_shoe_rebounds
       if attribute == :players
         data.each do |player|
           player.max_by{|k| k[:shoe:] }
-          player.max_by{|k| k[:shoe:] }[:name]
+          player.max_by{|k| k[:shoe:] }[:rebounds]
+        end
+      end
+    end
+  end
+end
+
           
