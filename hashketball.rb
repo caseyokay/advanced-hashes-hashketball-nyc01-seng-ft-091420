@@ -149,14 +149,13 @@ def big_shoe_rebounds
           #this gives me the player hashes
           # data.max_by{|player| player[:shoe] }
           # data.max_by{|player| player[:shoe] }[:rebounds]
-
           # player.max_by{|player| player[:shoe] 
           # player.max_by{|player| player[:shoe] }[:rebounds]
         end
       end
     end
   end
-end
+
 
 # def player_stats
 # #returns all stats for a given player 
